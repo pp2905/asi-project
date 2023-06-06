@@ -1,7 +1,7 @@
 import pandas as pd
 from sklearn.preprocessing import MinMaxScaler
 
-from asi.uttils.helpers import object_to_int
+from asi.utils.helpers import object_to_int
 
 
 def prepare_data(input_file: str, output_file: str):

@@ -1,0 +1,15 @@
+FROM python:3.10-slim-buster
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y default-jre
+
+RUN pip install --no-cache-dir h2o
+
+COPY src/requirements.txt /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
+
+COPY . /app
+
+# Run the Python script
+CMD ["python", "src/asi/utils/find_best_model.py"]
