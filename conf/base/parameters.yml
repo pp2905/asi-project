@@ -1,0 +1,5 @@
+
+raw_dataset_path: "data/raw/dataset1_raw.csv"
+processed_dataset_path: "data/processed/dataset1_processed.csv"
+evaluation_metrics_path: "data/evaluation/evaluation_metrics.csv"
+model_path: "data/models/model.sv"
