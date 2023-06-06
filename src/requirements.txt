@@ -18,3 +18,4 @@ pandas
 mlflow
 wandb
 h2o
+pandas_profiling
