@@ -16,4 +16,5 @@ streamlit
 scikit-learn
 pandas
 mlflow
-
+wandb
+h2o

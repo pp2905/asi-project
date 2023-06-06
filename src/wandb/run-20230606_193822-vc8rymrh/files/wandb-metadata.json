@@ -1,0 +1,50 @@
+{
+    "os": "Windows-10-10.0.19045-SP0",
+    "python": "3.10.11",
+    "heartbeatAt": "2023-06-06T17:38:23.847688",
+    "startedAt": "2023-06-06T17:38:22.616059",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\mosuc\\source\\repos\\ASI\\asi-project\\src\\wandb_test.py",
+    "codePath": "src\\wandb_test.py",
+    "git": {
+        "remote": "https://github.com/pp2905/asi-project.git",
+        "commit": "6c21c502d0ab1ad8a09e8279a6eb7564e35468e8"
+    },
+    "email": "mosucha99@gmail.com",
+    "root": "C:/Users/mosuc/source/repos/ASI/asi-project",
+    "host": "LAPTOK",
+    "username": "mosuc",
+    "executable": "C:\\Users\\mosuc\\AppData\\Local\\Microsoft\\WindowsApps\\PythonSoftwareFoundation.Python.3.10_qbz5n2kfra8p0\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2304.0,
+        "min": 0.0,
+        "max": 2304.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2304.0,
+            "min": 0.0,
+            "max": 2304.0
+        }
+    ],
+    "disk": {
+        "total": 237.91582870483398,
+        "used": 230.79753875732422
+    },
+    "gpu": "NVIDIA GeForce GTX 1050 Ti",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce GTX 1050 Ti",
+            "memory_total": 4294967296
+        }
+    ],
+    "memory": {
+        "total": 15.891830444335938
+    }
+}
