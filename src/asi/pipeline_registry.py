@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from kedro.pipeline import Pipeline, node
-import mlflow
 
 from asi.preprocessing.prepare_data import prepare_data
 from asi.training.train_model import train_model
@@ -27,15 +26,11 @@ def create_model_training_pipeline():
     return Pipeline(
         [
             node(
-                func=mlflow.run,
+                func=train_model,
                 inputs={
-                    "entry_point": "asi.training.train_model",
-                    "parameters": {
-                        "processed_data_path": "params:processed_dataset_path",
-                        "evaluation_metrics_path": "params:evaluation_metrics_path",
-                        "model_path": "params:model_path",
-                    },
-                    "name": "Train Model",
+                    "processed_data_path": "params:processed_dataset_path",
+                    "evaluation_metrics_path": "params:evaluation_metrics_path",
+                    "model_path": "params:model_path",
                 },
                 outputs=None,
                 name="train_model_node",
