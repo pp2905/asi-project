@@ -1,7 +1,7 @@
-"""Project pipelines."""
 from __future__ import annotations
 
 from kedro.pipeline import Pipeline, node
+import mlflow
 
 from asi.preprocessing.prepare_data import prepare_data
 from asi.training.train_model import train_model
@@ -12,7 +12,10 @@ def create_prepare_data_pipeline() -> Pipeline:
         [
             node(
                 func=prepare_data,
-                inputs={"input_file": "params:raw_dataset_path", "output_file": "params:processed_dataset_path"},
+                inputs={
+                    "input_file": "params:raw_dataset_path",
+                    "output_file": "params:processed_dataset_path",
+                },
                 outputs=None,
                 name="prepare_data_node",
             ),
@@ -24,11 +27,15 @@ def create_model_training_pipeline():
     return Pipeline(
         [
             node(
-                func=train_model,
+                func=mlflow.run,
                 inputs={
-                    "processed_data_path": "params:processed_dataset_path",
-                    "evaluation_metrics_path": "params:evaluation_metrics_path",
-                    "model_path": "params:model_path",
+                    "entry_point": "asi.training.train_model",
+                    "parameters": {
+                        "processed_data_path": "params:processed_dataset_path",
+                        "evaluation_metrics_path": "params:evaluation_metrics_path",
+                        "model_path": "params:model_path",
+                    },
+                    "name": "Train Model",
                 },
                 outputs=None,
                 name="train_model_node",
@@ -49,7 +56,7 @@ def register_pipelines() -> dict[str, Pipeline]:
     pipelines = {
         "data_processing": data_processing_pipeline,
         "model_training": model_training_pipeline,
-        "__default__": data_processing_pipeline + model_training_pipeline
+        "__default__": data_processing_pipeline + model_training_pipeline,
     }
 
     return pipelines

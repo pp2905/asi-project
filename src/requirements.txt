@@ -15,4 +15,5 @@ pytest~=7.2
 streamlit
 scikit-learn
 pandas
+mlflow
 
