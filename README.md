@@ -15,6 +15,16 @@ In order to get the best out of the template:
 * Don't commit data to your repository
 * Don't commit any credentials or your local configuration to your repository. Keep all your credentials and local configuration in `conf/local/`
 
+## Docker
+Build image
+```
+docker build -t <image_name> .
+```
+Run image
+```
+docker run <image_name>
+```
+
 ## How to install dependencies
 
 Declare any dependencies in `src/requirements.txt` for `pip` installation and `src/environment.yml` for `conda` installation.
