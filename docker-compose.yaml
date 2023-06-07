@@ -1,0 +1,18 @@
+version: '3'
+services:
+  kedro:
+    build:
+      context: .
+      dockerfile: Dockerfile.train
+    volumes:
+      - ./src:/app/src
+    depends_on:
+      - grafana
+    command: kedro run
+
+  grafana:
+    image: grafana/grafana:8.1.4
+    volumes:
+      - ./grafana.ini:/etc/grafana/grafana.ini
+    ports:
+      - 3000:3000
