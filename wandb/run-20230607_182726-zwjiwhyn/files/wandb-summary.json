@@ -1,0 +1,1 @@
+{"model": "RandomForestClassifier(random_state=42)", "Best Parameters": {"max_depth": 10, "n_estimators": 200}, "Best Score": 0.7990759667833462, "_timestamp": 1686155247.1033456, "_runtime": 0.9385745525360107, "_step": 0, "_wandb": {"runtime": 0}}

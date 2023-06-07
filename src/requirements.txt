@@ -19,3 +19,4 @@ mlflow
 wandb
 h2o
 pandas_profiling
+elasticsearch

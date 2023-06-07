@@ -1,54 +1,69 @@
-from datetime import datetime
-import pandas as pd
-from sklearn.model_selection import train_test_split
-from sklearn.neighbors import KNeighborsClassifier
 import pickle
-from sklearn.model_selection import GridSearchCV
-from sklearn.ensemble import RandomForestClassifier
-import csv
+import warnings
+
+import pandas as pd
 import wandb
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import LabelEncoder
 
-def train_model(processed_data_path: str, evaluation_metrics_path: str, model_path: str):
-    data = pd.read_csv(processed_data_path)
+from asi.evaluation.evaluation import evaluate_model, plot_roc_curve
+from asi.evaluation.hyperparameter_tuning import tune_hyperparameters
+from asi.models.decision_tree import build_decision_tree
+from asi.models.random_forest import build_random_forest
 
-    X = data.drop(columns=["Churn"])
-    y = data["Churn"].values
-    X_train, X_test, y_train, y_test = train_test_split(
-        X, y, test_size=0.30, random_state=40, stratify=y
-    )
-    # # Definicja siatki parametrów do przeszukania
-    # param_grid = {
-    #     'n_estimators': [100, 200, 300],
-    #     'max_depth': [None, 5, 10],
-    #     'min_samples_split': [2, 5, 10]
-    # }
-    # # Inicjalizacja modelu
-    # model = RandomForestClassifier()
-    #
-    # # Użycie GridSearchCV do przeszukania siatki parametrów
-    # grid_search = GridSearchCV(model, param_grid, cv=5)
-    # grid_search.fit(X_train, y_train)
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
-    # Najlepsze parametry i najlepszy model
-    # best_params = grid_search.best_params_
-    # best_model = grid_search.best_estimator_
-    # print(f"Best model {best_model}")
 
-    knn_model = KNeighborsClassifier(n_neighbors=11)
-    knn_model.fit(X_train, y_train)
-    predicted_y = knn_model.predict(X_test)
-    accuracy_knn = knn_model.score(X_test, y_test)
-    print("KNN accuracy:", accuracy_knn)
-    now = datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-
+def train_model(
+    processed_data_path: str, evaluation_metrics_path: str, model_path: str
+):
     wandb.login(key="9d8b84a3274d42706670aab35313c6333e638c5b")
-    wandb.init(project='my-awesome-project', entity='asi-project-2023')
-    wandb.log({'accuracy': accuracy_knn})
+    wandb.init(project="my-awesome-project", entity="asi-project-2023")
+
+    df = pd.read_csv(processed_data_path)
+
+    # Kodowanie binarne dla kolumny 'Churn'
+    label_encoder = LabelEncoder()
+    df["Churn"] = label_encoder.fit_transform(df["Churn"])
+
+    # Inne operacje na danych i budowanie modelu
+    X = df.drop("Churn", axis=1)
+    y = df["Churn"]
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42
+    )
+
+    # Budowanie modelu regresji logistycznej
+    logistic_model = LogisticRegression()
+    logistic_model.fit(X_train, y_train)
+
+    # Ocena modelu LogisticRegression
+    evaluate_model(logistic_model, X_test, y_test, evaluation_metrics_path)
+    plot_roc_curve(logistic_model, X_test, y_test)
+
+    # Dostosowanie hiperparametrów dla RandomForestClassifier
+    random_forest_model = build_random_forest(X_train, y_train)
+    param_grid = {"n_estimators": [100, 200, 300], "max_depth": [None, 5, 10]}
+    tune_hyperparameters(random_forest_model, X_train, y_train, param_grid)
+
+    # Budowanie modelu RandomForestClassifier z optymalnymi hiperparametrami
+    random_forest_model_optimal = build_random_forest(
+        X_train, y_train, n_estimators=200, max_depth=10
+    )
+
+    # Ocena modelu RandomForestClassifier
+    evaluate_model(random_forest_model_optimal, X_test, y_test, evaluation_metrics_path)
+    plot_roc_curve(random_forest_model_optimal, X_test, y_test)
+
+    # Budowanie modelu DecisionTreeClassifier
+    decision_tree_model = build_decision_tree(X_train, y_train)
+
+    # Ocena modelu DecisionTreeClassifier
+    evaluate_model(decision_tree_model, X_test, y_test, evaluation_metrics_path)
+    plot_roc_curve(decision_tree_model, X_test, y_test)
+
+    pickle.dump(logistic_model, open(model_path, "wb"))
+
     wandb.finish()
 
-    with open(evaluation_metrics_path, 'a') as f:
-        row = [now, 1.0, "KNeighborsClassifier", accuracy_knn]
-        writer = csv.writer(f, lineterminator='\n')
-        writer.writerow(row)
-
-    pickle.dump(knn_model, open(model_path, "wb"))

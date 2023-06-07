@@ -1,0 +1,127 @@
+{
+    "os": "Linux-5.19.0-43-generic-x86_64-with-glibc2.35",
+    "python": "3.10.6",
+    "heartbeatAt": "2023-06-07T16:19:43.710698",
+    "startedAt": "2023-06-07T16:19:43.063614",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "run"
+    ],
+    "state": "running",
+    "program": "/home/patryk/uczuelnia/asi/venv/bin/kedro",
+    "codePath": "venv/bin/kedro",
+    "git": {
+        "remote": "https://github.com/pp2905/asi-project.git",
+        "commit": "637c040813d1b3259c0e891efc7c68ede8c9c773"
+    },
+    "email": "ppiecek@gamecodehq.com",
+    "root": "/home/patryk/uczuelnia/asi",
+    "host": "patryk-Legion-5-15ACH6H",
+    "username": "patryk",
+    "executable": "/home/patryk/uczuelnia/asi/venv/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3528.1976875000005,
+        "min": 1200.0,
+        "max": 3200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 4134.277,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3888.144,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 4135.977,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 4111.604,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 4141.912,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 4141.841,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3880.786,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3465.62,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3599.414,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3854.113,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 4043.229,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3994.875,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3849.977,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3332.6,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3380.523,
+            "min": 1200.0,
+            "max": 3200.0
+        },
+        {
+            "current": 3313.312,
+            "min": 1200.0,
+            "max": 3200.0
+        }
+    ],
+    "disk": {
+        "total": 467.8895797729492,
+        "used": 195.60684204101562
+    },
+    "gpu": "NVIDIA GeForce RTX 3060 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060 Laptop GPU",
+            "memory_total": 6442450944
+        }
+    ],
+    "memory": {
+        "total": 27.26781463623047
+    }
+}

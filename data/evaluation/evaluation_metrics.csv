@@ -11,3 +11,23 @@ time_stamp,version,metric,score
 06-06-2023 21:41:56,1.0,KNeighborsClassifier,0.7696682464454976
 06-06-2023 21:52:28,1.0,KNeighborsClassifier,0.7696682464454976
 06-06-2023 22:03:27,1.0,KNeighborsClassifier,0.7696682464454976
+07-06-2023 18:09:41,1.0,LogisticRegression,0.8126330731014905
+07-06-2023 18:09:49,1.0,LogisticRegression,0.7274662881476224
+07-06-2023 18:11:57,1.0,LogisticRegression,0.8126330731014905
+07-06-2023 18:13:58,1.0,LogisticRegression,0.8126330731014905
+07-06-2023 18:15:38,1.0,LogisticRegression,0.8126330731014905
+07-06-2023 18:15:44,1.0,LogisticRegression,0.7274662881476224
+07-06-2023 18:18:25,1.0,LogisticRegression,0.8126330731014905
+07-06-2023 18:19:41,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+07-06-2023 18:20:56,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+07-06-2023 18:21:02,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+07-06-2023 18:26:49,1.0,LogisticRegression(),0.794180269694819
+07-06-2023 18:27:33,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+07-06-2023 18:27:39,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+07-06-2023 18:31:45,1.0,LogisticRegression(),0.794180269694819
+07-06-2023 18:32:29,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+07-06-2023 18:32:34,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+07-06-2023 18:49:53,1.0,LogisticRegression(),0.794180269694819
+07-06-2023 18:50:20,1.0,LogisticRegression(),0.794180269694819
+07-06-2023 18:50:51,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+07-06-2023 18:50:51,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
