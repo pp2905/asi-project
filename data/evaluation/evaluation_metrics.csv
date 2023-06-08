@@ -31,3 +31,100 @@ time_stamp,version,metric,score
 07-06-2023 18:50:20,1.0,LogisticRegression(),0.794180269694819
 07-06-2023 18:50:51,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
 07-06-2023 18:50:51,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+08-06-2023 16:40:25,1.0,LogisticRegression(),0.794180269694819
+08-06-2023 16:41:00,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+08-06-2023 16:41:00,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+08-06-2023 16:47:38,1.0,LogisticRegression(),0.794180269694819
+08-06-2023 16:48:13,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+08-06-2023 16:48:14,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+08-06-2023 16:54:07,1.0,LogisticRegression(),0.794180269694819
+08-06-2023 16:54:45,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+08-06-2023 16:54:45,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+08-06-2023 18:19:22,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+08-06-2023 18:19:23,1.0,LogisticRegression(),0.794180269694819
+08-06-2023 18:19:23,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+08-06-2023 18:48:53,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 18:49:20,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 18:49:45,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.801277501774308
+08-06-2023 18:50:00,1.0,"RandomForestClassifier(max_depth=5, random_state=42)",0.7991483321504613
+08-06-2023 18:50:16,1.0,"RandomForestClassifier(max_depth=5, n_estimators=200, random_state=42)",0.7998580553584103
+08-06-2023 18:50:32,1.0,"RandomForestClassifier(max_depth=5, n_estimators=300, random_state=42)",0.7991483321504613
+08-06-2023 18:50:48,1.0,"RandomForestClassifier(max_depth=10, random_state=42)",0.8097941802696949
+08-06-2023 18:51:04,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+08-06-2023 18:51:20,1.0,"RandomForestClassifier(max_depth=10, n_estimators=300, random_state=42)",0.8090844570617459
+08-06-2023 18:51:40,1.0,LogisticRegression(),0.794180269694819
+08-06-2023 18:51:41,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+08-06-2023 19:18:48,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 19:19:07,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 19:19:28,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.801277501774308
+08-06-2023 19:19:41,1.0,LogisticRegression(),0.794180269694819
+08-06-2023 19:19:41,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+08-06-2023 19:21:37,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 19:22:00,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 19:22:21,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.801277501774308
+08-06-2023 19:22:41,1.0,"RandomForestClassifier(max_depth=5, random_state=42)",0.7991483321504613
+08-06-2023 19:23:06,1.0,"RandomForestClassifier(max_depth=5, n_estimators=200, random_state=42)",0.7998580553584103
+08-06-2023 19:23:23,1.0,"RandomForestClassifier(max_depth=5, n_estimators=300, random_state=42)",0.7991483321504613
+08-06-2023 19:23:41,1.0,LogisticRegression(),0.794180269694819
+08-06-2023 19:23:41,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+08-06-2023 19:33:58,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 19:34:16,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 19:34:37,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.801277501774308
+08-06-2023 19:34:57,1.0,"RandomForestClassifier(max_depth=5, random_state=42)",0.7991483321504613
+08-06-2023 19:35:18,1.0,"RandomForestClassifier(max_depth=5, n_estimators=200, random_state=42)",0.7998580553584103
+08-06-2023 19:35:39,1.0,"RandomForestClassifier(max_depth=5, n_estimators=300, random_state=42)",0.7991483321504613
+08-06-2023 19:36:10,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 19:36:28,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 19:36:49,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.801277501774308
+08-06-2023 19:37:18,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 19:37:41,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 19:38:08,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.801277501774308
+08-06-2023 19:38:37,1.0,"RandomForestClassifier(max_depth=5, random_state=42)",0.7991483321504613
+08-06-2023 19:38:53,1.0,"RandomForestClassifier(max_depth=5, n_estimators=200, random_state=42)",0.7998580553584103
+08-06-2023 19:39:19,1.0,"RandomForestClassifier(max_depth=5, n_estimators=300, random_state=42)",0.7991483321504613
+08-06-2023 19:40:08,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 19:40:37,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 19:40:58,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.801277501774308
+08-06-2023 19:41:18,1.0,"RandomForestClassifier(max_depth=5, random_state=42)",0.7991483321504613
+08-06-2023 19:41:43,1.0,"RandomForestClassifier(max_depth=5, n_estimators=200, random_state=42)",0.7998580553584103
+08-06-2023 19:41:59,1.0,"RandomForestClassifier(max_depth=5, n_estimators=300, random_state=42)",0.7991483321504613
+08-06-2023 19:42:20,1.0,"RandomForestClassifier(max_depth=10, random_state=42)",0.8097941802696949
+08-06-2023 20:00:59,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 20:01:16,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 20:01:30,1.0,LogisticRegression(),0.794180269694819
+08-06-2023 20:01:31,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+08-06-2023 20:03:57,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 20:04:15,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 20:05:39,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 20:06:07,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 20:06:39,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.801277501774308
+08-06-2023 20:07:14,1.0,"RandomForestClassifier(max_depth=5, random_state=42)",0.7991483321504613
+08-06-2023 20:07:35,1.0,"RandomForestClassifier(max_depth=5, n_estimators=200, random_state=42)",0.7998580553584103
+08-06-2023 20:08:01,1.0,"RandomForestClassifier(max_depth=5, n_estimators=300, random_state=42)",0.7991483321504613
+08-06-2023 20:08:22,1.0,"RandomForestClassifier(max_depth=10, random_state=42)",0.8097941802696949
+08-06-2023 20:08:48,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+08-06-2023 20:09:15,1.0,"RandomForestClassifier(max_depth=10, n_estimators=300, random_state=42)",0.8090844570617459
+08-06-2023 20:09:46,1.0,LogisticRegression(),0.794180269694819
+08-06-2023 20:09:47,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+08-06-2023 20:18:28,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 20:18:56,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 20:19:28,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.801277501774308
+08-06-2023 20:20:03,1.0,"RandomForestClassifier(max_depth=5, random_state=42)",0.7991483321504613
+08-06-2023 20:20:24,1.0,"RandomForestClassifier(max_depth=5, n_estimators=200, random_state=42)",0.7998580553584103
+08-06-2023 20:20:45,1.0,"RandomForestClassifier(max_depth=5, n_estimators=300, random_state=42)",0.7991483321504613
+08-06-2023 20:21:06,1.0,"RandomForestClassifier(max_depth=10, random_state=42)",0.8097941802696949
+08-06-2023 20:21:37,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+08-06-2023 20:22:04,1.0,"RandomForestClassifier(max_depth=10, n_estimators=300, random_state=42)",0.8090844570617459
+08-06-2023 20:22:34,1.0,LogisticRegression(),0.794180269694819
+08-06-2023 20:22:35,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224
+08-06-2023 20:24:17,1.0,RandomForestClassifier(random_state=42),0.794889992902768
+08-06-2023 20:24:45,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.8034066713981547
+08-06-2023 20:25:17,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.801277501774308
+08-06-2023 20:25:52,1.0,"RandomForestClassifier(max_depth=5, random_state=42)",0.7991483321504613
+08-06-2023 20:26:13,1.0,"RandomForestClassifier(max_depth=5, n_estimators=200, random_state=42)",0.7998580553584103
+08-06-2023 20:26:35,1.0,"RandomForestClassifier(max_depth=5, n_estimators=300, random_state=42)",0.7991483321504613
+08-06-2023 20:26:55,1.0,"RandomForestClassifier(max_depth=10, random_state=42)",0.8097941802696949
+08-06-2023 20:27:18,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8126330731014905
+08-06-2023 20:27:43,1.0,"RandomForestClassifier(max_depth=10, n_estimators=300, random_state=42)",0.8090844570617459
+08-06-2023 20:28:14,1.0,LogisticRegression(),0.794180269694819
+08-06-2023 20:28:14,1.0,DecisionTreeClassifier(random_state=42),0.7274662881476224

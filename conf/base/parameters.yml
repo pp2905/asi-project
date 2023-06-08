@@ -2,4 +2,8 @@
 raw_dataset_path: "data/raw/dataset1_raw.csv"
 processed_dataset_path: "data/processed/dataset1_processed.csv"
 evaluation_metrics_path: "data/evaluation/evaluation_metrics.csv"
-model_path: "data/models/model.sv"
+model_path: {
+  logistic_model_path: "data/models/logistic_model.sv",
+  random_forest_model_path: "data/models/random_forest_model.sv",
+  decision_tree_model_path: "data/models/decision_tree_model.sv"
+}
