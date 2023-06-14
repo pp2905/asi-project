@@ -142,7 +142,7 @@ def main():
             senior_citizen_radio,
             partner_radio,
             dependents_radio,
-            tenure_slider,
+            (tenure_slider - 1) / (72-1),
             phone_service_radio,
             multiple_lines_radio,
             internet_service_radio,
@@ -155,8 +155,8 @@ def main():
             contract_radio,
             paperless_billing_radio,
             payment_method_radio,
-            monthly_charges_slider,
-            total_charges_slider,
+            (monthly_charges_slider - 18) / (119-18),
+            (total_charges_slider - 18) / (8685-18),
         ]
     ]
     survival = model.predict(data)
