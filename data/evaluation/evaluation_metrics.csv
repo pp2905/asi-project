@@ -174,3 +174,14 @@ time_stamp,version,metric,score
 14-06-2023 21:36:38,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.7977288857345636
 14-06-2023 21:38:12,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.7991483321504613
 14-06-2023 21:38:31,1.0,"RandomForestClassifier(max_depth=5, random_state=42)",0.8005677785663591
+14-06-2023 23:02:20,1.0,RandomForestClassifier(random_state=42),0.7920511000709723
+14-06-2023 23:02:41,1.0,"RandomForestClassifier(n_estimators=200, random_state=42)",0.7977288857345636
+14-06-2023 23:03:02,1.0,"RandomForestClassifier(n_estimators=300, random_state=42)",0.7991483321504613
+14-06-2023 23:03:22,1.0,"RandomForestClassifier(max_depth=5, random_state=42)",0.8005677785663591
+14-06-2023 23:03:37,1.0,"RandomForestClassifier(max_depth=5, n_estimators=200, random_state=42)",0.7991483321504613
+14-06-2023 23:03:54,1.0,"RandomForestClassifier(max_depth=5, n_estimators=300, random_state=42)",0.7984386089425124
+14-06-2023 23:04:19,1.0,"RandomForestClassifier(max_depth=10, random_state=42)",0.8062455642299503
+14-06-2023 23:04:36,1.0,"RandomForestClassifier(max_depth=10, n_estimators=200, random_state=42)",0.8041163946061036
+14-06-2023 23:04:57,1.0,"RandomForestClassifier(max_depth=10, n_estimators=300, random_state=42)",0.8034066713981547
+14-06-2023 23:05:20,1.0,LogisticRegression(),0.815471965933286
+14-06-2023 23:05:21,1.0,DecisionTreeClassifier(random_state=42),0.7246273953158269
