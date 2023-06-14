@@ -35,7 +35,7 @@ payment_method = {
 def main():
     st.set_page_config(page_title="Churn prediction")
     overview = st.container()
-    left, right = st.columns(2)
+    first, second, third, fourth = st.columns(4)
     prediction = st.container()
 
     st.image(
@@ -45,7 +45,7 @@ def main():
     with overview:
         st.title("Churn prediction")
 
-    with left:
+    with first:
         gender_radio = st.radio(
             "Gender", list(gender.keys()), format_func=lambda x: gender[x]
         )
@@ -74,6 +74,8 @@ def main():
             list(multiple_lines.keys()),
             format_func=lambda x: multiple_lines[x],
         )
+
+    with second:
         internet_service_radio = st.radio(
             "Internet service",
             list(internet_service.keys()),
@@ -99,6 +101,7 @@ def main():
             list(tech_support.keys()),
             format_func=lambda x: tech_support[x],
         )
+    with third:
         streaming_tv_radio = st.radio(
             "Streaming TV",
             list(streaming_tv.keys()),
@@ -125,7 +128,7 @@ def main():
             format_func=lambda x: payment_method[x],
         )
 
-    with right:
+    with fourth:
         tenure_slider = st.slider("Tenure", value=1, min_value=1, max_value=72)
         monthly_charges_slider = st.slider(
             "Monthly Charges", value=18, min_value=18, max_value=119
